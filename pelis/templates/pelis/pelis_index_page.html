@@ -5,6 +5,7 @@
 {% block body_class %}template-blogindexpage{% endblock %}
 
 {% block content %}
+<br>
 <div class="container">
     <h1>{{ page.title }}</h1>
 <hr>
@@ -12,14 +13,18 @@
 <p><a href="?genero=drama">Drama</a></p>
 <hr>
     <ul class="list-group">
-    {% for peli in peliculas %}
-    <li class="list-group-item">{{peli.title}}</li>
-    
-    {% empty %}
-    <p>No hay posts todavía ... </p>
-    {% endfor %}
+        {% for p in peliculas %} 
+        <div class="container">
+            <div class="row">
+                <div  class="col-sm-3">☆ {{ p.rating }}</div>
+                <div  class="col-sm-3">{{ p.title }}</div>
+                <div  class="col-sm-3">{{ p.cast }}</div>
+                <div  class="col-sm-3">{{ p.year }}</div>
+            </div>
+        </div><br>
+        {% endfor %}
 </ul>
-
+<br>
 {% if peliculas.paginator.count > 1 %}
         <div class="container">
             <div class="row">

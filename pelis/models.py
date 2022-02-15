@@ -69,7 +69,7 @@ class PelisIndexPage(Page):
     def paginate(self, request, peliculas, *args):
         page = request.GET.get('page')
         
-        paginator = Paginator(peliculas, 15)
+        paginator = Paginator(peliculas, 10)
         try:
             pages = paginator.page(page)
         except PageNotAnInteger:
