@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-blogindexpage{% endblock %}
+
+{% block content %}
+
+<br>
+{% if peliculas.paginator.count > 1 %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                {% include "includes/pagination.html" with subpages=peliculas %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <p><a href="{{ page.get_parent.url }}">Volver al blog</a></p>
+</div>
+{% endblock %}

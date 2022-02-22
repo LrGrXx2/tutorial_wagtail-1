@@ -23,6 +23,6 @@ class HomePage(Page):
         indice_noticias = BlogIndexPage.objects.filter(title="Noticias Peliculas")
         if indice_noticias:
             indice_noticias = indice_noticias[0]
-            noticias = BlogPage.objects.descendant_of(indice_noticias).order_by("-date")[:5]
+            noticias = BlogPage.objects.descendant_of(indice_noticias).order_by("-date")[:5]   
             context['noticias'] = noticias
         return context

@@ -12,8 +12,19 @@
 <div class="container mt-5">
 {{page.body | richtext}}
 
-{% for noticia in noticias %}
- {{ noticia.title }}
-{% endfor %}
+<br>
+<div>
+    <h3>Últimas noticias</h3>
+    {% for noticia in noticias %}
+        <h5>︽ <a href="//localhost:8000/noticias-pel%C3%ADculas/" + noticias.title.replace(' ', '-').lower()>{{ noticia.title }}:</a></h5> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ noticia.intro}}
+        <br>
+        <br>
+    {% endfor %}
 </div>
+
+
+</div>
+<br>
+<br>
 {% endblock content %}
