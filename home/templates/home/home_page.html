@@ -11,5 +11,9 @@
 {% block content %}
 <div class="container mt-5">
 {{page.body | richtext}}
+
+{% for noticia in noticias %}
+ {{ noticia.title }}
+{% endfor %}
 </div>
 {% endblock content %}

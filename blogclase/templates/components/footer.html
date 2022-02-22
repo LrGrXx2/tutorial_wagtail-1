@@ -1,25 +1,5 @@
-<style>
-    html {
-        min-height: 100%;
-        position: relative;
-        background-color:aliceblue;
-    }
+{% load blog_tags %}
 
-    body {
-        margin: 0;
-        margin-bottom: 40px;
-    }
-
-    footer {
-        background-color: rgb(69, 1, 100);
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 35px;
-        color:aliceblue;
-        text-align: center;
-    }
-</style>
 <footer>
     {% get_footer_text %}
     {% get_footer_url %}

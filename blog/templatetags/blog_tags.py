@@ -25,3 +25,14 @@ def get_footer_text(context):
     return {
         'footer_text': footer_text
     }
+
+@register.inclusion_tag('blog/components/footer_text.html',
+                        takes_context=True)                       
+def get_footer_url(context):
+    footer_url = ""
+    
+    if FooterText.objects.first() is not None:
+        footer_url = FooterText.objects.first().titulo
+    return {
+        'footer_url': footer_url
+    }
