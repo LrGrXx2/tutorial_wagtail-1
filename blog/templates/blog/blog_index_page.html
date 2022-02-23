@@ -11,12 +11,14 @@
     <div class="intro">{{ page.introduccion|richtext }}</div>
 
     {% for post in blogpages %}
+    <div class="noticia mt-3">
         <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
         {{ post.specific.intro }}
         {% comment %}
         Quito el body para que no salga
         en índice
         {% endcomment %}
+    </div>
     {% empty %}
     <p>No hay posts todavía ... </p>
     {% endfor %}

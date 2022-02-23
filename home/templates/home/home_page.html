@@ -16,11 +16,12 @@
 <div>
     <h3>Últimas noticias</h3>
     {% for noticia in noticias %}
-        <h5>︽ <a href="//localhost:8000/noticias-pel%C3%ADculas/" + noticias.title.replace(' ', '-').lower()>{{ noticia.title }}:</a></h5> 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ noticia.intro}}
-        <br>
-        <br>
+    <div class="noticia mt-4">
+        <h5><a href="{{noticia.get_url}}">{{ noticia.title }}:</a></h5> 
+        {{ noticia.intro }}
+    </div>
     {% endfor %}
+    <div style="float: right;"><a href="//localhost:8000/noticias-pel%C3%ADculas/">Ver todas las noticias</a></div>
 </div>
 
 
