@@ -7,11 +7,11 @@
 {% block content %}
 
 <br>
-{% if peliculas.paginator.count > 1 %}
+{% if eventos.paginator.count > 1 %}
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                {% include "includes/pagination.html" with subpages=peliculas %}
+                {% include "includes/pagination.html" with subpages=eventos %}
                 </div>
             </div>
         </div>

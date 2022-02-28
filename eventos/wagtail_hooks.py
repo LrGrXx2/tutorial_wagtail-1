@@ -6,7 +6,7 @@ from eventos.models import Evento
 '''
 N.B. To see what icons are available for use in Wagtail menus and StreamField block types,
 enable the styleguide in settings:
-
+ 
 INSTALLED_APPS = (
    ...
    'wagtail.contrib.styleguide',
