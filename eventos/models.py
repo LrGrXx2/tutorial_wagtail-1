@@ -19,7 +19,7 @@ class Evento(models.Model):
     #slug = models.SlugField(blank=True, max_length=250)
     descripcion = models.CharField('descripcion', max_length=500)
     imagen = models.URLField(max_length=250)
-    fecha_inicio = models.IntegerField()
+    fecha_inicio = models.DateField()
     categoria = models.CharField('categoria', max_length=250)
     autor = models.CharField('autor', max_length=250)
 
@@ -63,14 +63,14 @@ class EventosIndexPage(Page):
     def get_context(self, request):
         # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
-        fecha = request.GET.get('fecha')
+        fecha_inicio = request.GET.get('fecha_inicio')
         qs = ''
-        if fecha:
+        if fecha_inicio:
             eventos = Evento.objects.filter(year__gte=1990, 
-                year__lt=2000).order_by('-rating')
-            qs = f'fecha={fecha}'
+                year__lt=2000).order_by('fecha_inicio')
+            qs = f'fecha_inicio={fecha_inicio}'
         else:
-            eventos = Evento.objects.all().order_by('-rating')
+            eventos = Evento.objects.all().order_by('fecha_inicio')
 
         context['eventos'] = self.paginate(request, eventos)
         context['qs'] = qs

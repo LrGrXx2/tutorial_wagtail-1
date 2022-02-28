@@ -22,44 +22,49 @@ footer {
 }
 
 a {
-    color: rgb(75, 1, 109);
-    font-size: large;
-    font-weight: 650;
-    
+  color: rgb(75, 1, 109);
+  font-size: large;
+  font-weight: 650;
 }
 
-small{
-    padding-left: 30px;
+small {
+  padding-left: 30px;
 }
 
 a.navbar {
-    font-weight: 400;
+  font-weight: 400;
 }
 
-h1{
-    padding-top: 20px;
-    font-weight: 600;
+h1 {
+  padding-top: 20px;
+  font-weight: 600;
 }
-hr{
-    color: blueviolet;
-}
-
-div.container{
-    margin-left: 40px;
-    margin-right: 40px;
+hr {
+  color: blueviolet;
 }
 
-img{
-    display: block;
-    margin: 0 auto 0 auto;
-    }
-
-h4{
-    padding-top: 20px;
-    padding-left: 20px;
+div.container {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-p{
-    text-align: justify;
+img {
+  display: block;
+  margin: 0 auto 0 auto;
 }
 
+h4 {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+#map {
+  height: 300px;
+  width: 700px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
