@@ -14,7 +14,8 @@
         <div class="container">
             <div class="row">
                 <h2>{{ e.nombre }}</h2>
-                <p>{{ e.descripcion | richtext }}, categoría: {{ e.categoria }} <br>
+                <p>{{ e.descripcion | richtext }} 
+                <br><b>Categoría:</b> {{ e.categoria }} <br>
                 Este evento tendrá lugar el <u>{{ e.fecha_inicio }}</u>
                 
                 <img src="{{ e.imagen }}" style="height: 300px;"></p>
