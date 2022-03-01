@@ -34,7 +34,7 @@ class Evento(models.Model):
 
     ]
     def __str__(self):
-        return f'{self.title} ({self.year})'
+        return f'{self.nombre}'
     
     class Meta:
         verbose_name = 'Evento'
@@ -51,7 +51,7 @@ class EventosIndexPage(Page):
     def paginate(self, request, eventos, *args):
         page = request.GET.get('page')
         
-        paginator = Paginator(eventos, 10)
+        paginator = Paginator(eventos, 3)
         try:
             pages = paginator.page(page)
         except PageNotAnInteger:

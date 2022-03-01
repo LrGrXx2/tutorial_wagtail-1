@@ -5,7 +5,23 @@
 {% block body_class %}template-blogindexpage{% endblock %}
 
 {% block content %}
-
+<br>
+<div class="container">
+    <h1>{{ page.title }}</h1>
+<hr>
+    <ul class="list-group">
+        {% for e in eventos %} 
+        <div class="container">
+            <div class="row">
+                <h2>{{ e.nombre }}</h2>
+                <p>{{ e.descripcion | richtext }}, categoría: {{ e.categoria }} <br>
+                Este evento tendrá lugar el <u>{{ e.fecha_inicio }}</u>
+                
+                <img src="{{ e.imagen }}" style="height: 300px;"></p>
+            </div>
+        </div><br>
+        {% endfor %}
+</ul>
 <br>
 {% if eventos.paginator.count > 1 %}
         <div class="container">
