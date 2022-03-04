@@ -112,6 +112,7 @@ class BlogCategory(models.Model):
         verbose_name_plural = 'categorías de blog'
         verbose_name = 'categoría de blog'
 
+# modelo del footer
 @register_snippet
 class FooterText(models.Model):
     titulo = models.CharField(max_length=250)

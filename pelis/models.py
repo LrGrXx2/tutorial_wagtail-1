@@ -16,6 +16,7 @@ from django.utils.text import slugify
 
 ## Modelo para películas
 
+# Modelo Generos
 class Genre(models.Model):
     nombre = models.CharField(max_length=150, unique=True)
     def __str__(self):
@@ -27,6 +28,7 @@ class Genre(models.Model):
         verbose_name = 'Género'
         verbose_name_plural = 'Géneros'
 
+# Modelo Pelicula
 class Pelicula(models.Model):
     title = models.CharField('título', max_length=250)
     slug = models.SlugField(blank=True, max_length=250)

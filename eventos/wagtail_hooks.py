@@ -19,7 +19,7 @@ This demo project includes the full font-awesome set via CDN in base.html, so th
 font-awesome icon set is available to you. Options are at http://fontawesome.io/icons/.
 '''
 
-
+# Para poder verlo en el /admin
 class EventoAdmin(ModelAdmin):
     # These stub classes allow us to put various models into the custom "Wagtail Bakery" menu item
     # rather than under the default Snippets section.

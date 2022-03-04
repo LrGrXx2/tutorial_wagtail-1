@@ -14,6 +14,7 @@ from django.utils.text import slugify
 ## Page que mostrará el index de las películas
 ## Hereda solo de Home y no descendientes
 
+# Modelo de Evento
 class Evento(models.Model):
     nombre = models.CharField('nombre', max_length=250)
     #slug = models.SlugField(blank=True, max_length=250)

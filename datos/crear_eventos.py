@@ -4,6 +4,9 @@ crear eventos
 ejecutar:
 
 python manage.py shell < datos/crear_eventos.py
+
+Gracias a este archivo python, podemos extraer los eventos del 
+json datos_eventos.json
 '''
 
 from eventos.models import Evento
