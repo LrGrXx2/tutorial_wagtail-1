@@ -7,11 +7,11 @@ En ella podemos ver el listado de las 250 mejores películas (extraidas de la we
 
 ## ¿Cómo lo instalo y hago funcionar?
 ### Windows
-(ATENCIÓN) Deberemos tener en nuestro ordenador la aplicación "GitBash" u otra del estilo para que el cmd reconozca los comandos de Git, y Python.
+(ATENCIÓN) Deberemos tener en nuestro ordenador la aplicación "GitBash" u otra del estilo y Python, para que el cmd reconozca los comandos correspondientes.
 1. Nos posicionamos donde queramos tener la capeta en el cmd (con cd)
 2. Copiamos el enlace del repositorio git donde está el trabajo
 3. En el cmd escribimos: git clone https://github.com/LrGrXx2/tutorial_wagtail-1.git
-4. Nos posicionamos dentro del proyecto en el cmd (con cd)
+4. Nos posicionamos dentro del proyecto
 5. Creamos el entorno virtual (py -m venv env)
 6. Activamos el entorno virtual (env\Scripts\activate.bat)
 7. Instalamos los requisitos (pip install -r requirements.txt)
@@ -20,11 +20,11 @@ En ella podemos ver el listado de las 250 mejores películas (extraidas de la we
 10. Cuando queramos pararlo: Ctrl + c (en el cmd)
 
 ### Linux/Mac
-(ATENCIÓN) Deberemos tener en nuestro ordenador la aplicación "GitBash" u otra del estilo para que el cmd reconozca los comandos de Git, y Python.
+(ATENCIÓN) Deberemos tener en nuestro ordenador la aplicación "GitBash" u otra del estilo y Python, para que el cmd reconozca los comandos correspondientes.
 1. Nos posicionamos donde queramos tener la capeta en el cmd (con cd)
 2. Copiamos el enlace del repositorio git donde está el trabajo
 3. En el cmd escribimos: git clone https://github.com/LrGrXx2/tutorial_wagtail-1.git
-4. Nos posicionamos dentro del proyecto en el cmd (con cd)
+4. Nos posicionamos dentro del proyecto
 5. Creamos el entorno virtual (python3 -m venv env)
 6. Activamos el entorno virtual (source tutorial-env/bin/activate)
 7. Instalamos los requisitos (pip install -r requirements.txt)
