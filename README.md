@@ -3,8 +3,7 @@
 Web de datos realizada con Wagtail.
 En ella podemos ver el listado de las 250 mejores películas (extraidas de la web de IMDb: https://www.imdb.com/chart/top/), un listado de las fiestas de Santa Cruz de Tenerife (sacadas de un json del ayuntamiento de ese lugar), diferentes opciones de viajes a Santa Cruz de Tenerife con distintas compañías, y algunas noticias sobre el mundo del entretenimiento.
 
-Nombre del admin: admin
-Contraseña de admin: root
+**Nombre del admin:** admin / **Contraseña de admin:** root
 
 ## ¿Cómo lo instalo y hago funcionar?
 ### Windows
