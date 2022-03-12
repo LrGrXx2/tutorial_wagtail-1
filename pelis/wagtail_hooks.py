@@ -33,7 +33,7 @@ class PelisAdmin(ModelAdmin):
     # rather than under the default Snippets section.
     model = Pelicula
     search_fields = ('title', 'cast', 'year')
-    menu_icon = 'fa-film'  # change as required
+    menu_icon = 'fa-film'
     menu_order = 200  # will put in 3rd place (000 being 1st, 100 2nd)
 
 

@@ -25,7 +25,8 @@ class EventoAdmin(ModelAdmin):
     # rather than under the default Snippets section.
     model = Evento
     menu_label = 'Eventos'
-    #search_fields = ('nombre',)
+    search_fields = ('nombre', 'descripcion', )
+    list_filter = ('categoria',)
     menu_icon = 'group'
 
 

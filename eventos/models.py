@@ -35,7 +35,7 @@ class Evento(models.Model):
 
     ]
     def __str__(self):
-        return f'{self.nombre}'
+        return f'{self.nombre} ({self.fecha_inicio})'
     
     class Meta:
         verbose_name = 'Evento'
