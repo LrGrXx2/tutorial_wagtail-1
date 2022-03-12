@@ -48,6 +48,7 @@ class EventosIndexPage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('introduccionEventos', classname="full")
     ]
+    subpage_types = []
 
     def paginate(self, request, eventos, *args):
         page = request.GET.get('page')

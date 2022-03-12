@@ -67,6 +67,7 @@ class PelisIndexPage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('introduccion', classname="full")
     ]
+    subpage_types = []
 
     def paginate(self, request, peliculas, *args):
         page = request.GET.get('page')

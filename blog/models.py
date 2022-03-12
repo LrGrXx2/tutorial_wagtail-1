@@ -22,6 +22,7 @@ class BlogIndexPage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('introduccion', classname="full")
     ]
+    #subpage_types = ['blogclase.BlogPage', 'blogclase.ViajesPage'] #da error
 
     def get_context(self, request):
         # Update context to include only published posts, ordered by reverse-chron
@@ -77,6 +78,7 @@ class BlogPage(Page):
         InlinePanel('gallery_images', 
             label="Galería de imágenes"),
     ]
+    subpage_types = []
 
 class BlogPageGalleryImage(Orderable):
     page = ParentalKey(BlogPage, 
